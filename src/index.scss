@@ -75,5 +75,33 @@ body {
     border-radius: 15px;
     box-shadow: -3px -3px 7px rgba(255, 255, 255, 1),
     4px 4px 7px rgba(0, 0, 0, 0.15);
+    &__title{
+      font-size: 2.5rem;
+      color: #556581;
+      margin: 0 0 20px 0;
+    }
+  }
+  .open-modal-btn {
+    background: #fff;
+    padding: 18px 25px;
+    border-radius: 20px;
+    font-weight: 500;
+    border: 0;
+    outline: none;
+    font-size: 22px;
+    cursor: pointer;
+    line-height: 23px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.1s ease-in-out;
+
+    &:hover {
+      box-shadow: 0 8px 10px rgba(0, 0, 0, 0.1);
+      transform: translateY(-1px);
+    }
+
+    &:active {
+      box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+      transform: translateY(0);
+    }
   }
 }
