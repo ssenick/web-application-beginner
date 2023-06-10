@@ -2,9 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a4bd8d4a-7104-42fa-9ea4-749217b82624" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/Users/Skeleton.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Users/Success.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Users/User.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Users/Users.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Users/Users.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Quiz/Quiz.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Quiz/Quiz.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Quiz/QuizResult.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Quiz/QuizResult.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/constants /quizQuestions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants /quizQuestions.js" afterDir="false" />
     </list>
@@ -44,7 +50,7 @@
       <option name="presentableId" value="Default" />
       <updated>1686269580301</updated>
       <workItem from="1686269582511" duration="141000" />
-      <workItem from="1686269737184" duration="14065000" />
+      <workItem from="1686269737184" duration="16415000" />
     </task>
     <servers />
   </component>

@@ -6,6 +6,7 @@ import Wrapper from "./components/Wrapper/Wrapper";
 import Quiz from "./components/Quiz/Quiz";
 import QuizResult from "./components/Quiz/QuizResult";
 import {quizQuestions} from "./constants /quizQuestions";
+import {Users} from "./components/Users/Users";
 
 function App() {
    const [isActiveModal, setIsActiveModal] = useState(false)
@@ -30,9 +31,11 @@ function App() {
          </Wrapper>
 
          <Wrapper title='Quiz'>
-
             <Quiz quizQuestions={quizQuestions} />
+         </Wrapper>
 
+         <Wrapper>
+            <Users/>
          </Wrapper>
 
          <Modal/>

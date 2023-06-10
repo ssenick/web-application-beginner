@@ -1,20 +1,20 @@
 export const quizQuestions = [
    {
-      title: 'React - это ... ?',
-      variants: ['библиотека', 'фреймворк', 'приложение'],
+      title: 'React is...?',
+      variants: ['library', 'framework', 'application'],
       correct: 0,
    },
    {
-      title: 'Компонент - это ... ',
-      variants: ['приложение', 'часть приложения или страницы', 'то, что я не знаю что такое'],
+      title: 'The component is...? ',
+      variants: ['application', 'Part of an application or page', "what i don't know what is"],
       correct: 1,
    },
    {
-      title: 'Что такое JSX?',
+      title: 'What is JSX?',
       variants: [
-         'Это функция',
-         'Это простой HTML',
-         'Это тот же HTML, но с возможностью выполнять JS-код',
+         'This is a function',
+         'This is plane HTML',
+         'This is the same HTML, but with the ability to execute JS code',
       ],
       correct: 0,
    },
