@@ -12,10 +12,10 @@ export const quizQuestions = [
    {
       title: 'Что такое JSX?',
       variants: [
-         'Это простой HTML',
          'Это функция',
+         'Это простой HTML',
          'Это тот же HTML, но с возможностью выполнять JS-код',
       ],
-      correct: 2,
+      correct: 0,
    },
 ];

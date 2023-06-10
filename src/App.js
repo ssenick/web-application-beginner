@@ -30,9 +30,9 @@ function App() {
          </Wrapper>
 
          <Wrapper title='Quiz'>
-            
-            <Quiz title={quizQuestions[0].title} variants={quizQuestions[0].variants} correct={quizQuestions[0].correct}/>
-            <QuizResult/>
+
+            <Quiz quizQuestions={quizQuestions} />
+
          </Wrapper>
 
          <Modal/>
