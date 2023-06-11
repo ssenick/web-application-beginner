@@ -34,7 +34,7 @@ function App() {
             <Quiz quizQuestions={quizQuestions} />
          </Wrapper>
 
-         <Wrapper>
+         <Wrapper title="Users API">
             <Users/>
          </Wrapper>
 
