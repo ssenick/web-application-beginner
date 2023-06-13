@@ -22,10 +22,15 @@ export const Users = () => {
       fetchUsers()
    }, [])
 
+   const search = (item) =>{
+      const searchString = (item.first_name + item.last_name).toLowerCase();
+      const searchEmail = item.email.toLowerCase();
+      const inputValueText = inputValue.toLowerCase();
+      return searchString.includes(inputValueText) || searchEmail.includes(inputValueText)
+   }
 
    const onChange = (e) => {
       setInputValue(e.target.value)
-      // filter
    }
    return (
       <div className="users">
@@ -36,7 +41,7 @@ export const Users = () => {
             </svg>
             <input
                value={inputValue}
-               onChange={(e)=>onChange(e)}
+               onChange={onChange}
                className="users__input"
                type="text"
                placeholder="Find users..."
@@ -48,23 +53,20 @@ export const Users = () => {
                   <h1>Error : {usersError}</h1>
                </div>
             }
-            {isUsersLoading ? (
+            {isUsersLoading ?
                <div className="users__skeleton-list">
                   <Skeleton/>
                   <Skeleton/>
                   <Skeleton/>
                </div>
-            ) : (
+               :
                <ul className="users__users-list">
-                  {users.length > 0 && users.map(user => (
+                  {users.length > 0 && users.filter(search).map(user => (
                      <User key={user.id} {...user}/>
                   ))}
                </ul>
-            )}
-
+            }
          </div>
-
-
          <button className="users__send-invite-btn">Send an invitation</button>
       </div>
    );
