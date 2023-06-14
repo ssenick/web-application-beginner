@@ -5,7 +5,7 @@ const Wrapper = ({title,children}) => {
 
       <div className="wrapper">
          <div className="wrapper__container">
-            <h2 className="wrapper__title">{title}</h2>
+            {title && <h2 className="wrapper__title">{title}</h2>}
             {children}
          </div>
 

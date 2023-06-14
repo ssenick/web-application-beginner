@@ -6,6 +6,7 @@ import Wrapper from "./components/Wrapper/Wrapper";
 import Quiz from "./components/Quiz/Quiz";
 import {quizQuestions} from "./constants /quizQuestions";
 import {Users} from "./components/Users/Users";
+import Blocks from "./components/Blocks/Blocks";
 
 function App() {
    const [isActiveModal, setIsActiveModal] = useState(false)
@@ -30,11 +31,15 @@ function App() {
          </Wrapper>
 
          <Wrapper title='Quiz'>
-            <Quiz quizQuestions={quizQuestions} />
+            <Quiz quizQuestions={quizQuestions}/>
          </Wrapper>
 
          <Wrapper title="Users API">
             <Users/>
+         </Wrapper>
+
+         <Wrapper title="Currency convertor">
+            <Blocks/>
          </Wrapper>
 
          <Modal/>

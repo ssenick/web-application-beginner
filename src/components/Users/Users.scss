@@ -1,5 +1,5 @@
 .users {
-  width: 400px;
+  width: 100%;
   height: 625px;
   margin: 10px auto;
   background-color: #fff;
@@ -30,6 +30,11 @@
     font-size: 16px;
   }
   &__wrapper{
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+  }
+  &__main{
     flex: 1 1 auto;
     display: flex;
     flex-direction: column;
