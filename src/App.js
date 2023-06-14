@@ -4,7 +4,6 @@ import Modal from "./components/Modal/Modal";
 import React, {useState} from "react";
 import Wrapper from "./components/Wrapper/Wrapper";
 import Quiz from "./components/Quiz/Quiz";
-import QuizResult from "./components/Quiz/QuizResult";
 import {quizQuestions} from "./constants /quizQuestions";
 import {Users} from "./components/Users/Users";
 

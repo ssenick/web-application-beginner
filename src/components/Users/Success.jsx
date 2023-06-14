@@ -1,12 +1,18 @@
 import React from 'react';
 
-export const Success = ({ count }) => {
+export const Success = ({ count,resetAll }) => {
    return (
-      <div className="success-block">
+      <li className="success-block">
          <img className="success-block__image" src="/assets/success.svg" alt="Success" />
          <h3 className="success-block__title">Successfully!</h3>
-         <p className="success-block__text">An invitation has been sent to all {count} users.</p>
-         <button className="success-block__send-invite-btn">Back</button>
-      </div>
+         {count > 1
+            ?
+            <p className="success-block__text">An invitation has been sent to all {count} users.</p>
+            :
+            <p className="success-block__text">An invitation has been sent to your user.</p>
+         }
+
+         <button onClick={resetAll} className="success-block__send-invite-btn">Back</button>
+      </li>
    );
 };

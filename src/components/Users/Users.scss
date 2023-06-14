@@ -29,7 +29,11 @@
     width: 100%;
     font-size: 16px;
   }
-
+  &__wrapper{
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+  }
   &__content {
     flex: 1 1 auto;
   }
@@ -61,7 +65,11 @@
     box-shadow: 0 7px 10px rgba(251, 80, 0, 0.4);
     cursor: pointer;
     transition: all 0.1s ease-in-out;
-
+    pointer-events: auto;
+    &.disabled{
+      opacity: 0.5;
+      pointer-events: none;
+    }
     &:hover {
       background-color: rgb(255, 97, 24);
     }
