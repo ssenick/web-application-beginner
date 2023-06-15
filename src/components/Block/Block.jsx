@@ -3,7 +3,7 @@ import './Block.scss';
 
 
 
-const Block = ({defaultCurrencies,value, currency, onChangeValue, onChangeCurrency}) => (
+const Block = ({defaultCurrencies,value, currency, onChangeValue, onChangeCurrency,ratesIsError}) => (
 
    <div className="block">
       <ul className="block__currencies">
@@ -23,9 +23,11 @@ const Block = ({defaultCurrencies,value, currency, onChangeValue, onChangeCurren
          </li>
       </ul>
       <input
-         onChange={(e) => onChangeValue(e.target.value)}
-         value={value}
+         disabled={ratesIsError && true}
+         onChange={(e)=> onChangeValue(e.target.value)}
+         value={ratesIsError ? '' : value}
          type="number"
+         placeholder={ratesIsError && 'Sorry... Error'}
       />
    </div>
 );
