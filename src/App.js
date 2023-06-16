@@ -7,6 +7,7 @@ import Quiz from "./components/Quiz/Quiz";
 import {quizQuestions} from "./constants /quizQuestions";
 import {Users} from "./components/Users/Users";
 import Blocks from "./components/Blocks/Blocks";
+import Products from "./components/Products/Products";
 
 function App() {
    const [isActiveModal, setIsActiveModal] = useState(false)
@@ -40,6 +41,10 @@ function App() {
 
          <Wrapper title="Currency convertor">
             <Blocks/>
+         </Wrapper>
+
+         <Wrapper title="Products">
+            <Products/>
          </Wrapper>
 
          <Modal/>

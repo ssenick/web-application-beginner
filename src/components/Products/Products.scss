@@ -1,0 +1,33 @@
+.products{
+  &__header{
+    display: grid;
+    gap: 15px;
+  }
+  &__filter{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  &__button{
+    display: inline-block;
+    padding: 12px 18px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    text-transform: uppercase;
+    font-weight: 500;
+    &:hover {
+      border: 2px solid rgba(0, 0, 0, 0.3);
+    }
+
+    &.active {
+      background-color: #16b67f;
+      color: #fff;
+    }
+  }
+  &__search{}
+}
