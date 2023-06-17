@@ -7,7 +7,7 @@ import Quiz from "./components/Quiz/Quiz";
 import {quizQuestions} from "./constants /quizQuestions";
 import {Users} from "./components/Users/Users";
 import Blocks from "./components/Blocks/Blocks";
-import Products from "./components/Products/Products";
+import ProductsNew from "./components/Products/ProductsNew";
 
 function App() {
    const [isActiveModal, setIsActiveModal] = useState(false)
@@ -44,7 +44,7 @@ function App() {
          </Wrapper>
 
          <Wrapper block title="Products">
-            <Products/>
+            <ProductsNew/>
          </Wrapper>
 
          <Modal/>

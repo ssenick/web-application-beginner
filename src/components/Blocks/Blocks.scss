@@ -1,5 +1,14 @@
 .blocks{
-  display: flex;
-  flex-wrap: wrap;
-  gap: 25px;
+  display: grid;
+  gap: 20px;
+  h2{
+    a{
+      color: #00c4ff;
+    }
+  }
+  &__wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+  }
 }

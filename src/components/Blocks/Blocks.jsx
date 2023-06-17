@@ -50,6 +50,10 @@ const Blocks = () => {
 
    return (
       <div className='blocks'>
+         <h2>If the currency converter does not work, follow the links:&nbsp;
+            <a  target='_blank' href="https://cors-anywhere.herokuapp.com/corsdemo and click the button. Then return to the project">Link</a>
+            &nbsp; and click the button. Then return to the project</h2>
+         <div className="blocks__wrapper">
          <Block value={inputValueOne}
                 currency={currencyOne}
                 defaultCurrencies={defaultCurrencies}
@@ -65,6 +69,7 @@ const Blocks = () => {
                 onChangeCurrency={onChangeCurrencyTwo}
                 ratesIsError={ratesIsError}
          />
+         </div>
       </div>
    );
 };
