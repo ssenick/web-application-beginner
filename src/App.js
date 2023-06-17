@@ -43,7 +43,7 @@ function App() {
             <Blocks/>
          </Wrapper>
 
-         <Wrapper title="Products">
+         <Wrapper block title="Products">
             <Products/>
          </Wrapper>
 
